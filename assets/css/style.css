@@ -31,7 +31,10 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
+  flex-wrap: wrap;
 }
+
+#haut>ul{min-width: 280px;}
 
 li {
   display: block;
@@ -123,18 +126,21 @@ main > section:nth-child(2) > figure:nth-child(3) {
   cursor: pointer;} */
 
 .btn{display: block;
-width: 260px;
+min-width: 260px;
 height: 50px;
 text-align: center;
 line-height: 50px;
 background: black;
-color: white;}
+color: white;
+
+}
 
 .centre{margin: auto;}
 
 main>section:nth-child(3)>ul{width: 100%;
 justify-content: center;
 gap:10px;
+flex-wrap: wrap;
 }
 
 main>section:nth-child(3)>ul>li{display: block;
@@ -156,3 +162,47 @@ left: 0;
 z-index: -1;
 width: 100%;
 background-size: cover;}
+
+.logo{width: 60px;
+margin: 15px;}
+
+
+
+@media screen and (min-width:980px) {
+
+  #haut+a, #burger > li:first-child, li:nth-child(2) {display: none;}
+
+  
+
+
+
+}
+
+@media screen and (max-width:979px) {
+
+  #haut>ul:last-child, header+section, video{display: none;}
+  #haut+a{display: block;
+  position: absolute;
+top: 80px;
+right: 20px;
+font-size: 20px;
+color: red;}
+
+#burger{position: fixed;
+background: black;
+top: 0;
+width: 100%;
+height: 100vh;
+flex-direction: column;
+align-items: center;
+transition: 1s linear;
+z-index: 5;}
+
+#burger:not(:target){
+  right: 200%;
+}
+
+#burger:target{
+  right: 0;
+}
+}

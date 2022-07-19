@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0c5b85b43b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <nav id="haut">
         <ul>
-          <li><a href="index.html">Nike</a></li>
+          <li><a href="index.html"><img src="assets/img/logoB.svg" alt="" class="logo"></a></li>
           <li><a href="conv.html">Converse</a></li>
         </ul>
 
@@ -22,8 +26,13 @@
         </ul>
       </nav>
 
+      <a href="#burger"><i class="fas fa-bars"></i></a>
+
       <nav id="bas">
-        <ul>
+        <ul id="burger">
+          
+          <li><a href="#"><i class="fas fa-times"></i></a></li>
+          <li><a href="index.html"><img src="assets/img/logoB.svg" alt="" class="logo"></a></li>
           <li><a href="new.html">Nouveautes</a></li>
           <li><a href="men.html"> Homme</a></li>
           <li><a href="women.html">Femme</a></li>
@@ -33,6 +42,7 @@
         </ul>
       </nav>
     </header>
+
     <section>
       <!-- ici la video -->
     </section>
@@ -96,13 +106,12 @@
           film, Range, vient nous rappeler que plus nous rêvons, plus nous
           pouvons nous envoler vers les sommets
         </p>
-      
 
-      <ul>
-        <li><a href="" class="btn">Jordan basketball</a></li>
-        <li><a href="" class="btn">Regarder</a></li>
-      </ul>
-    </section>
+        <ul>
+          <li><a href="" class="btn">Jordan basketball</a></li>
+          <li><a href="" class="btn">Regarder</a></li>
+        </ul>
+      </section>
 
       <section></section>
 
@@ -112,9 +121,9 @@
     </main>
 
     <video autoplay muted loop id="bgvid">
-      <source src="assets/video/slide.mp4" type="video/mp4">
-      <source src="assets/video/slide.ogg" type="video/ogv">
-      <source src="assets/video/slide.webm" type="video/webm">
+      <source src="assets/video/slide.mp4" type="video/mp4" />
+      <source src="assets/video/slide.ogg" type="video/ogv" />
+      <source src="assets/video/slide.webm" type="video/webm" />
     </video>
   </body>
 </html>
